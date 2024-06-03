@@ -1,0 +1,59 @@
+
+.form.simplified {
+    min-width: 600px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #383838;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.buttons {
+    text-align: right;
+}
+
+.btn {
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #383838;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#add-btn {
+    background-color: #4CAF50; /* Green */
+}
+
+#save-btn {
+    background-color: #a9a9a9; /* Gray */
+}
+
+/* Hide spinners from number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

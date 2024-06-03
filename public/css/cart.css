@@ -1,0 +1,268 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Istok Web', sans-serif;
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Start-Nav-Style */
+.containerNav{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    z-index: 5;
+}
+/* Navigation Bar Enhanced Style */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 50px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative; /* For absolute positioning of sous_menu */
+    padding: 3px 15px;
+    border-radius: 7px;
+    transition: background 0.3s ease-in;
+}
+
+nav ul li:hover {
+    background-color: #a2a2a2;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem 0.5rem;
+}
+
+nav ul .sous_menu {
+    position: absolute;
+    display: none;
+    left: 0; /* Align with the left edge of the parent li */
+    top: 100%; /* Positioned just below the parent li */
+    background: #444;
+    border-radius: 0 0 7px 7px;
+    width: 100%;
+}
+
+nav ul .sous_menu li {
+    border-top: 1px solid #252525;
+}
+
+nav ul li:hover .sous_menu {
+    display: block;
+}
+
+.svgimg {
+    transition: fill 0.3s ease; /* Smooth transition for fill change */
+}
+
+.svgimg:hover {
+    fill: white; /* Fill on hover */
+    stroke: white;
+}
+
+
+/* end-Nav-Style */
+
+
+/* Main */
+
+
+/* cart show */
+
+
+
+/* End cart show */
+
+
+/* End Main */
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: black;
+    color: #fefefe;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer .heading {
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+.footer .content div {
+    margin-bottom: 1.5rem; /* Adds spacing between content blocks */
+}
+
+.footer .content h4 {
+    font-size: 1.25rem; /* Sets a readable font size for headings */
+    color: #FFCE00; /* Highlight color for headings for visibility */
+    margin-bottom: 1rem; /* Adds spacing below headings */
+    font-weight: bold; /* Emphasizes the headings */
+}
+
+.footer .content p {
+    font-size: 1rem; /* Standard font size for paragraph text */
+    color: #fefefe; /* Light color for text for readability */
+    margin-bottom: 0.5rem; /* Adds spacing below paragraphs */
+}
+
+.footer .content a {
+    color: #FFCE00; /* Makes links stand out */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: normal; /* Default weight for link text */
+}
+
+.footer .content a:hover {
+    color: #ffffff; /* Changes link color on hover for visual feedback */
+    border-bottom: 2px solid #FFCE00; /* Underlines link on hover */
+}
+
+/* Additional responsiveness for footer content */
+@media (max-width: 768px) {
+    .footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .content div, .footer .content h4, .footer .content p, .footer .content a {
+        text-align: center; /* Centers content on smaller screens */
+    }
+
+    .footer .content div {
+        width: 100%; /* Ensures divs take full width */
+    }
+}
+.footer .content a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 767px) {
+    .footer .content {
+      flex-direction: column;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav .logo, nav ul {
+      flex: 100%;
+      justify-content: center;
+      display: flex;
+    }
+    nav ul {
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    section {
+      height: auto;
+      padding: 20px 5%;
+    }
+    .card {
+      /* width: auto; */
+      max-width: 90%;
+      /* margin: 20px auto; */
+    }
+
+    .footer {
+      position: relative;
+      height: auto;
+    }
+    .footer .content {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+  }
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    nav, section, .footer {
+      flex-direction: column;
+    }
+
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .footer .content {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+/* end footer */

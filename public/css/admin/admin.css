@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('wp2508286-admin-wallpapers.jpg') no-repeat fixed center center;
+    background-size: 100% 100%;
+    font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #f1f5f8;
+    line-height: 2.2;
+    font-size: 0.875rem;
+}
+
+/* Start style navbar */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    color: #e94949;
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: black;
+}
+
+.menu a {
+    color: grey;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 3.5rem;
+    transition: all 0.3s linear;
+}
+
+.menu a:hover {
+    background: #f8a5a5;
+    color: #e94949;
+    padding-left: 5rem;
+}
+
+.menu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-menu {
+    height: 10rem;
+}
+
+.HeaderAdminImg{
+    height: 70px;
+    width: 250px;
+    border-radius: 3px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+@media (min-width: 800px) {
+    main {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .menu {
+        height: auto;
+        display: flex;
+    }
+
+    .menu a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .menu a:hover {
+        padding: 0;
+        background: transparent;
+    }
+}
+
+/* End style navbar */
+
+.logo {
+    width: 170px;
+    height: 30px;
+    margin: 30px auto;
+}
+
+.logo img {
+    width: 150px;
+}
+
+
+.login-block {
+    width: 400px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #ff7b81;
+}
+
+#section0 {
+border-top: 3px solid #FC748B;
+width: 100%;
+height: 10vh;
+margin: 0 auto;
+padding: 0;
+display: inline-block;
+outline: none;
+}
+
+#section1 {
+width: 100%;
+height: 84vh;
+margin: 60px auto;
+padding: 0;
+display: inline-block;
+outline: none;
+}
+
+#section3 {
+width: 100%;
+height: 6vh;
+margin: 0;
+padding: 0;
+display: inline-block;
+outline: none;
+background-color: #f8f8f8;
+border-top: 2px solid #74D3F2;
+}
+
+#mainsection
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+
+
+     -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+}
+img:hover {
+    transform:scale(1.5);
+    -ms-transform:scale(1.5); /* IE 9 */
+    -moz-transform:scale(1.5); /* Firefox */
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -o-transform:scale(1.5); /* Opera */
+}
+
+#Imgcontent
+{
+    margin-top: 61px;
+    margin-left: 350px;
+    width: 100%;
+    height: 100%;
+}
+span
+{
+    margin-right: 25px;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.messagecontent{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login-profile {
+    width: 100%; /* 60% dos 50vh (pq está dentro da div left-login) */
+    display: flex;
+    justify-content: center; /* centraliza no eixo x */
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 300px;
+    box-shadow: 0px 10px 40px #00000056; /* 1 valor é o eixo x, 2 valor é eixo y, 3 valor é blur, 4 valor é cor */
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+
+.logoutadmin{
+    color: #868686;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.logoutadmin:hover{
+    color: #e94949;
+}
+
+.actionadmin{
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.actionadmin:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+
+}
